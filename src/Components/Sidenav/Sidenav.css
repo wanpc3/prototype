@@ -1,0 +1,92 @@
+.sidenav-container {
+  width: 250px;
+  background-color: #f0f2f5;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidenav-header h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0;
+}
+
+.add-partner-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 1.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-partner-btn:hover {
+  background-color: #0056b3;
+}
+
+.partner-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto; /* Enable scrolling if many partners */
+}
+
+.partner-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.partner-item:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.partner-item.selected {
+  background-color: #d1e7ff; /* Light blue for selected */
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  border: 1px solid #007bff;
+}
+
+.partner-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+  border: 1px solid #e0e0e0;
+}
+
+.partner-name {
+  flex-grow: 1; /* Allows name to take available space */
+  color: #333;
+}
+
+.no-partners-message {
+    text-align: center;
+    color: #6c757d;
+    padding: 20px 0;
+    font-style: italic;
+}
