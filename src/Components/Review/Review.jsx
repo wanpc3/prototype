@@ -92,7 +92,7 @@ function Review({ fileName, fileType, detectedPii, onProceed, onCancel }) {
         </>
       );
     }
-    return null; // Or handle other file types
+    return null;
   };
 
   return (

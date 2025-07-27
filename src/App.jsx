@@ -174,7 +174,7 @@ function App() {
         }
         detectedPii = detectedPii.map(item => {
           const confidence = item.confidence || item.avgConfidence;
-          if (confidence < 70) { //
+          if (confidence < 70) {
             return { ...item, ignore: true };
           }
           return item;

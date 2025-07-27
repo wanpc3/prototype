@@ -5,6 +5,7 @@ import './PartnerDetails.css';
 function PartnerDetails({ partner, onFileUpload, onToggleFileAnonymization, onViewAuditLog}) {
   const fileInputRef = useRef(null);
 
+  //Upload file
   const handleUploadButtonClick = () => {
     fileInputRef.current.click();
   };
