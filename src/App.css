@@ -11,15 +11,14 @@ body {
 .app-container {
   display: flex;
   height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  overflow: hidden;
 }
 
 .main-content {
   flex-grow: 1;
   padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  margin: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   overflow-y: auto;
 }
 
@@ -28,6 +27,27 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: #888;
+  color: #6c757d;
   font-size: 1.2em;
+  text-align: center;
+}
+
+/* Responsive Styles for App */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    padding: 15px;
+    overflow-y: visible;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 10px;
+  }
 }

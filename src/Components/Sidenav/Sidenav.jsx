@@ -1,6 +1,7 @@
+import React from 'react';
 import './Sidenav.css';
 
-const Sidenav = ({ partners, selectedPartnerId, onSelectedPartner, onAddPartnerClick }) => {
+const Sidenav = ({ partners, selectedPartnerId, onSelectPartner, onAddPartnerClick }) => {
   return (
     <div className="sidenav-container">
         <div className="sidenav-header">
